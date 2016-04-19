@@ -23,6 +23,11 @@ namespace BoardGameChooser
             ClassicCatan.Types.Add(BoardGame.GameType.Strategy);
             boardGames.Add(ClassicCatan);
 
+            BoardGame CatanDice = new BoardGame("Catan Dice Game", 1, 4, 15);
+            CatanDice.Types.Add(BoardGame.GameType.Dice);
+            CatanDice.Types.Add(BoardGame.GameType.Strategy);
+            boardGames.Add(CatanDice);
+
             BoardGame StarTrekCatan = new BoardGame("Star Trek: Catan", 3, 4, 75);
             StarTrekCatan.Types.Add(BoardGame.GameType.Strategy);
             boardGames.Add(StarTrekCatan);
@@ -169,6 +174,10 @@ namespace BoardGameChooser
             BoardGame Dixit = new BoardGame("Dixit", 3, 6, 30);
             Dixit.Types.Add(BoardGame.GameType.Card);
             boardGames.Add(Dixit);
+
+            BoardGame SushiGo = new BoardGame("Sushi Go!", 2, 5, 15);
+            SushiGo.Types.Add(BoardGame.GameType.Card);
+            boardGames.Add(SushiGo);
 
             MessageBox.Show(boardGames.Select(x => x.Name)
                                       .OrderBy(x => x)
