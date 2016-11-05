@@ -76,7 +76,18 @@ namespace BoardGameChooser
 
             BoardGame CardsAgainstHumanity = new BoardGame("Cards Aginst Humanity", 4, 10, 30, 90);
             CardsAgainstHumanity.Types.Add(BoardGame.GameType.Party);
+            CardsAgainstHumanity.Types.Add(BoardGame.GameType.Card);
             boardGames.Add(CardsAgainstHumanity);
+
+            BoardGame Codenames = new BoardGame("Codenames", 2, 10, 15);
+            Codenames.Types.Add(BoardGame.GameType.Party);
+            Codenames.Types.Add(BoardGame.GameType.Card);
+            boardGames.Add(Codenames);
+
+            BoardGame CodenamesDeepUndercover = new BoardGame("Codenames Deep Undercover", 2, 10, 15);
+            CodenamesDeepUndercover.Types.Add(BoardGame.GameType.Party);
+            CodenamesDeepUndercover.Types.Add(BoardGame.GameType.Card);
+            boardGames.Add(CodenamesDeepUndercover);
 
             BoardGame ZombieDice = new BoardGame("Zombie Dice", 2, 10, 30);
             ZombieDice.Types.Add(BoardGame.GameType.Dice);
@@ -147,6 +158,10 @@ namespace BoardGameChooser
             LefendofDrizzt.Types.Add(BoardGame.GameType.CoOp);
             boardGames.Add(LefendofDrizzt);
 
+            BoardGame StarTekExpeditions = new BoardGame("Star Trek Expeditions", 1, 4, 60);
+            StarTekExpeditions.Types.Add(BoardGame.GameType.CoOp);
+            boardGames.Add(StarTekExpeditions);
+
             BoardGame Munchkin = new BoardGame("Munchkin", 3, 6, 60, 120);
             Munchkin.Types.Add(BoardGame.GameType.Party);
             boardGames.Add(Munchkin);
@@ -178,6 +193,21 @@ namespace BoardGameChooser
             BoardGame SushiGo = new BoardGame("Sushi Go!", 2, 5, 15);
             SushiGo.Types.Add(BoardGame.GameType.Card);
             boardGames.Add(SushiGo);
+
+            BoardGame RiseOfAgustus = new BoardGame("Rise of Agustus", 2, 6, 30);
+            boardGames.Add(RiseOfAgustus);
+
+            BoardGame Mastermind = new BoardGame("Mastermind", 2, 2, 10);
+            Mastermind.Types.Add(BoardGame.GameType.Strategy);
+            boardGames.Add(Mastermind);
+
+            BoardGame DastardlyDirigibles = new BoardGame("Dastardly Dirigibles", 2, 5, 60);
+            DastardlyDirigibles.Types.Add(BoardGame.GameType.Tile);
+            boardGames.Add(DastardlyDirigibles);
+
+            BoardGame FireflyClue = new BoardGame("Firefly Clue", 3, 6, 90);
+            FireflyClue.Types.Add(BoardGame.GameType.Strategy);
+            boardGames.Add(FireflyClue);
 
             MessageBox.Show(boardGames.Select(x => x.Name)
                                       .OrderBy(x => x)
