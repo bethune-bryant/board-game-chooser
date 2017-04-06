@@ -22,11 +22,11 @@ namespace BoardGameChooser
         {
             get
             {
-                return new BoardGame(txtName.Text, (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList());
+                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList());
             }
             set
             {
-                txtName.Text = value.Name;
+                txtName.Text = value.Name.Trim();
                 numMinPlayers.Value = value.MinNumOfPlayers;
                 numMaxPlayers.Value = value.MaxNumOfPlayers;
                 numMinDuration.Value = value.MinDuration;
@@ -46,7 +46,7 @@ namespace BoardGameChooser
         {
             get
             {
-                if(txtName.Text.Count() <=0)
+                if(txtName.Text.Trim().Count() <=0)
                 {
                     MessageBox.Show("The board game must have a name.", "Error: No Name", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;

@@ -73,6 +73,8 @@ namespace BoardGameChooser
             this.numMinMinutes.Value = this.numMinMinutes.Minimum;
             this.numMaxMinutes.Value = this.numMaxMinutes.Maximum;
 
+            this.Text = "Board Game Chooser! | Total Games: " + settings.BoardGames.Count.ToString();
+
             try
             {
                 dataGames.FirstDisplayedScrollingRowIndex = temp;
