@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <rand />
+  <BoardGames>
+    <BoardGame>
+      <Name>Alhambra</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Tile</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Carcassonne</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>Tile</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Cards Aginst Humanity</Name>
+      <MinNumOfPlayers>4</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Castle Panic</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Catan</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Catan Dice Game</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Dice</GameType>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Codenames</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Codenames Deep Undercover</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Coup</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+        <GameType>Lying</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Dastardly Dirigibles</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Tile</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Dixit</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Dungeons &amp; Dragons: Castle Ravenloft Board Game</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Dungeons &amp; Dragons: The Legend of Drizzt Board Game</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Elder Sign</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>120</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Electronic Battleship Advanced Mission</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>War</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Firefly Clue</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Five Tribes</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>40</MinDuration>
+      <MaxDuration>80</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Forbidden Island</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Formula D</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Dice</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>King of Tokyo</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Love Letter</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Love Letter: Batman</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Magic Cards</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>50</MinDuration>
+      <MaxDuration>50</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Mastermind</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>10</MinDuration>
+      <MaxDuration>10</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Monopoly</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Monopoly Deal Card Game</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Monopoly: Pokémon Kanto Edition </Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Monopoly: Star Wars</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Munchkin</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>120</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Pandemic</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Pokemon Cards</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Rise of Agustus</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Risk</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+        <GameType>War</GameType>
+        <GameType>Dice</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Risk: Star Wars Edition</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+        <GameType>War</GameType>
+        <GameType>Dice</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Sheriff of Knottingham</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Lying</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Skip Bo</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Small World</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>40</MinDuration>
+      <MaxDuration>80</MaxDuration>
+      <Types>
+        <GameType>War</GameType>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Smash Up!</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Star Trek Deck Building Game: The Next Generation – The Next Phase</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Star Trek Expeditions</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>CoOp</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Star Trek: Catan</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>75</MinDuration>
+      <MaxDuration>75</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Stratego</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>45</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Sushi Go!</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Card</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>The Resistance</Name>
+      <MinNumOfPlayers>5</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+        <GameType>Lying</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Ticket To Ride</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Ticket To Ride: Europe</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Tsuro</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+        <GameType>Tile</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
+      <Name>Zombie Dice</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>Dice</GameType>
+      </Types>
+    </BoardGame>
+  </BoardGames>
+</Settings>

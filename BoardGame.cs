@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace BoardGameChooser
 {
-    class BoardGame
+    [Serializable]
+    public class BoardGame : IComparable
     {
         public string Name { get; set; }
         public int MinNumOfPlayers { get; set; }
@@ -34,6 +35,52 @@ namespace BoardGameChooser
 
         public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int Duration) : this(Name, MinNumOfPlayers, MaxNumOfPlayers, Duration, Duration) { }
 
+        public BoardGame() : this("", 0, 0, 0) { }
+
         public enum GameType { Strategy, Tile, War, Dice, Card, Party, CoOp, Lying}
+
+        #region Interfaces
+
+        int IComparable.CompareTo(object obj)
+        {
+            BoardGame input = obj as BoardGame;
+
+            if (obj == null)
+            {
+                throw new ArgumentException();
+            }
+            else
+            {
+                return this.Name.CompareTo(input.Name);
+            }
+        }
+
+        #endregion
+
+        public object AsRow
+        {
+            get
+            {
+                return new { Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, Types = TypeString };
+            }
+        }
+
+        private string TypeString
+        {
+            get
+            {
+                return Types.Select(x => x.ToString())
+                            .Aggregate(string.Empty, (current, next) => current + "," + next);
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+            BoardGame input = obj as BoardGame;
+
+            if (obj == null) return false;
+
+            return this.Name.Equals(input.Name);
+        }
     }
 }
