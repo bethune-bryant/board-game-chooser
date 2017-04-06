@@ -87,6 +87,16 @@
       </Types>
     </BoardGame>
     <BoardGame>
+      <Name>Colt Express</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>40</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+    </BoardGame>
+    <BoardGame>
       <Name>Coup</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
@@ -294,6 +304,7 @@
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
       <Types>
+        <GameType>Strategy</GameType>
         <GameType>CoOp</GameType>
       </Types>
     </BoardGame>
@@ -454,6 +465,18 @@
       <MinDuration>30</MinDuration>
       <MaxDuration>60</MaxDuration>
       <Types />
+    </BoardGame>
+    <BoardGame>
+      <Name>Tiny Epic Galaxies</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types>
+        <GameType>Strategy</GameType>
+        <GameType>Dice</GameType>
+        <GameType>Card</GameType>
+      </Types>
     </BoardGame>
     <BoardGame>
       <Name>Tsuro</Name>
