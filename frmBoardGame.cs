@@ -68,6 +68,11 @@ namespace BoardGameChooser
                     MessageBox.Show("The min and max player count have to be non zero and min must be less than or equal to max.", "Error: Invalid Player Count", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
                 }
+                if(Form1.settings.BoardGames.Where(x=>x.Name.Trim().Equals(txtName.Text.Trim())).Count() > 0)
+                {
+                    MessageBox.Show("The board game must have a unique name.", "Error: Name Already Exists", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
                 return true;
             }
         }

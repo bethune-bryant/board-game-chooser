@@ -47,6 +47,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listTypes = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -136,7 +137,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addBoardgameToolStripMenuItem});
+            this.addBoardgameToolStripMenuItem,
+            this.viewSourceCodeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(659, 24);
@@ -274,6 +276,13 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Types:";
             // 
+            // viewSourceCodeToolStripMenuItem
+            // 
+            this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
+            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
+            this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,6 +333,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listTypes;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolStripMenuItem viewSourceCodeToolStripMenuItem;
     }
 }
 

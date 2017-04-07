@@ -22,11 +22,6 @@ namespace BoardGameChooser
         public List<GameCategory> Categories { get; set; }
         public List<GameMechanism> Mechanisms { get; set; }
 
-        public override string ToString()
-        {
-            return Name;
-        }
-
         public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration, List<GameType> Types, List<GameCategory> Categories, List<GameMechanism> Mechanisms)
         {
             this.Name = Name;
@@ -84,6 +79,11 @@ namespace BoardGameChooser
             if (obj == null) return false;
 
             return this.Name.Equals(input.Name);
+        }
+
+        public override string ToString()
+        {
+            return Name;
         }
     }
 }

@@ -63,14 +63,14 @@ namespace BoardGameChooser
             settings.BoardGames.Sort();
             dataGames.DataSource = new SortableBinding.SortableBindingList<Object>(settings.BoardGames.Select(x => x.AsRow).ToList());
 
-            this.numPlayers.Minimum = settings.BoardGames.Select(x => x.MinNumOfPlayers).Min();
-            this.numPlayers.Maximum = settings.BoardGames.Select(x => x.MaxNumOfPlayers).Max();
+            this.numPlayers.Minimum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MinNumOfPlayers).Min() : 0;
+            this.numPlayers.Maximum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MaxNumOfPlayers).Max() : 0;
 
-            this.numMinMinutes.Minimum = settings.BoardGames.Select(x => x.MinDuration).Min();
-            this.numMinMinutes.Maximum = settings.BoardGames.Select(x => x.MinDuration).Max();
+            this.numMinMinutes.Minimum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MinDuration).Min() : 0;
+            this.numMinMinutes.Maximum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MinDuration).Max() : 0;
 
-            this.numMaxMinutes.Minimum = settings.BoardGames.Select(x => x.MaxDuration).Min();
-            this.numMaxMinutes.Maximum = settings.BoardGames.Select(x => x.MaxDuration).Max();
+            this.numMaxMinutes.Minimum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MaxDuration).Min() : 0;
+            this.numMaxMinutes.Maximum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MaxDuration).Max() : 0;
 
             this.numMinMinutes.Value = this.numMinMinutes.Minimum;
             this.numMaxMinutes.Value = this.numMaxMinutes.Maximum;
@@ -78,21 +78,21 @@ namespace BoardGameChooser
             this.Text = "Board Game Chooser! | Total Games: " + settings.BoardGames.Count.ToString();
 
             listTypes.Items.Clear();
-            foreach (BoardGame.GameType type in settings.BoardGames.Select(x => x.Types).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            foreach (BoardGame.GameType type in settings.BoardGames.Select(x => x.Types).Aggregate(new List<BoardGame.GameType>(), (i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
             {
                 listTypes.Items.Add(type);
                 listTypes.SetSelected(listTypes.Items.Count - 1, false);
             }
 
             listCategories.Items.Clear();
-            foreach (BoardGame.GameCategory type in settings.BoardGames.Select(x => x.Categories).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            foreach (BoardGame.GameCategory type in settings.BoardGames.Select(x => x.Categories).Aggregate(new List<BoardGame.GameCategory>(), (i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
             {
                 listCategories.Items.Add(type);
                 listCategories.SetSelected(listCategories.Items.Count - 1, false);
             }
 
             listMechanisms.Items.Clear();
-            foreach (BoardGame.GameMechanism type in settings.BoardGames.Select(x => x.Mechanisms).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            foreach (BoardGame.GameMechanism type in settings.BoardGames.Select(x => x.Mechanisms).Aggregate(new List<BoardGame.GameMechanism>(), (i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
             {
                 listMechanisms.Items.Add(type);
                 listMechanisms.SetSelected(listMechanisms.Items.Count - 1, false);
@@ -135,12 +135,17 @@ namespace BoardGameChooser
         private void dataGames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             frmBoardGame dialog = new BoardGameChooser.frmBoardGame();
-            dialog.Value = selectedGame;
-            if(dialog.ShowDialog() == DialogResult.OK)
+            BoardGame temp = selectedGame;
+            dialog.Value = temp;
+            settings.BoardGames.Remove(temp);
+            if (dialog.ShowDialog() == DialogResult.OK)
             {
-                settings.BoardGames.Remove(selectedGame);
                 settings.BoardGames.Add(dialog.Value);
                 RefreshGames();
+            }
+            else
+            {
+                settings.BoardGames.Add(temp);
             }
         }
 
@@ -154,6 +159,11 @@ namespace BoardGameChooser
                     RefreshGames();
                 }
             }
+        }
+
+        private void viewSourceCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/bethune-bryant/board-game-chooser");
         }
     }
 }
