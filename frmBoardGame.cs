@@ -35,6 +35,8 @@ namespace BoardGameChooser
                 numMaxDuration.Value = value.MaxDuration;
 
                 for (int i = 0; i < listTypes.Items.Count; i++) listTypes.SetSelected(i, value.Types.Contains((BoardGame.GameType)listTypes.Items[i]));
+                for (int i = 0; i < listCategories.Items.Count; i++) listCategories.SetSelected(i, value.Categories.Contains((BoardGame.GameCategory)listCategories.Items[i]));
+                for (int i = 0; i < listMechanisms.Items.Count; i++) listMechanisms.SetSelected(i, value.Mechanisms.Contains((BoardGame.GameMechanism)listMechanisms.Items[i]));
             }
         }
 
