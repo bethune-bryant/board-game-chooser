@@ -31,8 +31,11 @@ namespace BoardGameChooser
         private void btnChoose_Click(object sender, EventArgs e)
         {
             List<BoardGame> possibles = settings.BoardGames.Where(game => game.MinDuration >= numMinMinutes.Value && game.MaxDuration <= numMaxMinutes.Value)
-                                                  .Where(game => game.MinNumOfPlayers <= numPlayers.Value && game.MaxNumOfPlayers >= numPlayers.Value)
-                                                  .ToList();
+                                                .Where(game => game.MinNumOfPlayers <= numPlayers.Value && game.MaxNumOfPlayers >= numPlayers.Value)
+                                                .Where(game => listTypes.SelectedItems.Count == 0 || listTypes.SelectedItems.Cast<BoardGame.GameType>().Intersect(game.Types).Count() > 0)
+                                                .Where(game => listCategories.SelectedItems.Count == 0 || listCategories.SelectedItems.Cast<BoardGame.GameCategory>().Intersect(game.Categories).Count() > 0)
+                                                .Where(game => listMechanisms.SelectedItems.Count == 0 || listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().Intersect(game.Mechanisms).Count() > 0)
+                                                .ToList();
 
             if (possibles.Count == 0)
             {
@@ -42,7 +45,6 @@ namespace BoardGameChooser
             {
                 MessageBox.Show(possibles[settings.rand.Next(0, possibles.Count)].ToString(), "Chosen Game");
             }
-                      
         }
 
         private void RefreshGames()
@@ -74,6 +76,27 @@ namespace BoardGameChooser
             this.numMaxMinutes.Value = this.numMaxMinutes.Maximum;
 
             this.Text = "Board Game Chooser! | Total Games: " + settings.BoardGames.Count.ToString();
+
+            listTypes.Items.Clear();
+            foreach (BoardGame.GameType type in settings.BoardGames.Select(x => x.Types).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            {
+                listTypes.Items.Add(type);
+                listTypes.SetSelected(listTypes.Items.Count - 1, false);
+            }
+
+            listCategories.Items.Clear();
+            foreach (BoardGame.GameCategory type in settings.BoardGames.Select(x => x.Categories).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            {
+                listCategories.Items.Add(type);
+                listCategories.SetSelected(listCategories.Items.Count - 1, false);
+            }
+
+            listMechanisms.Items.Clear();
+            foreach (BoardGame.GameMechanism type in settings.BoardGames.Select(x => x.Mechanisms).Aggregate((i, j) => i.Concat(j).ToList()).Distinct().OrderBy(x => x))
+            {
+                listMechanisms.Items.Add(type);
+                listMechanisms.SetSelected(listMechanisms.Items.Count - 1, false);
+            }
 
             try
             {

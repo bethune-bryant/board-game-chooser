@@ -16,13 +16,15 @@ namespace BoardGameChooser
         {
             InitializeComponent();
             foreach (BoardGame.GameType type in Enum.GetValues(typeof(BoardGame.GameType))) listTypes.Items.Add(type);
+            foreach (BoardGame.GameCategory category in Enum.GetValues(typeof(BoardGame.GameCategory))) listCategories.Items.Add(category);
+            foreach (BoardGame.GameMechanism mechanism in Enum.GetValues(typeof(BoardGame.GameMechanism))) listMechanisms.Items.Add(mechanism);
         }
 
         public BoardGame Value
         {
             get
             {
-                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList());
+                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList(), listCategories.SelectedItems.Cast<BoardGame.GameCategory>().ToList(), listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().ToList());
             }
             set
             {
@@ -38,8 +40,11 @@ namespace BoardGameChooser
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.OK;
-            this.Close();
+            if (IsInputValid)
+            {
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private bool IsInputValid

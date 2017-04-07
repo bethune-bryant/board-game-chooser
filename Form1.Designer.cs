@@ -41,6 +41,12 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
+            this.listMechanisms = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.listCategories = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listTypes = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -78,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 21);
+            this.label2.Location = new System.Drawing.Point(12, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 3;
@@ -86,7 +92,7 @@
             // 
             // numMinMinutes
             // 
-            this.numMinMinutes.Location = new System.Drawing.Point(99, 37);
+            this.numMinMinutes.Location = new System.Drawing.Point(15, 76);
             this.numMinMinutes.Name = "numMinMinutes";
             this.numMinMinutes.Size = new System.Drawing.Size(54, 20);
             this.numMinMinutes.TabIndex = 2;
@@ -94,7 +100,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(224, 21);
+            this.label3.Location = new System.Drawing.Point(12, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 13);
             this.label3.TabIndex = 5;
@@ -102,7 +108,7 @@
             // 
             // numMaxMinutes
             // 
-            this.numMaxMinutes.Location = new System.Drawing.Point(227, 37);
+            this.numMaxMinutes.Location = new System.Drawing.Point(15, 115);
             this.numMaxMinutes.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -119,7 +125,7 @@
             // 
             // btnChoose
             // 
-            this.btnChoose.Location = new System.Drawing.Point(341, 34);
+            this.btnChoose.Location = new System.Drawing.Point(12, 141);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(75, 23);
             this.btnChoose.TabIndex = 6;
@@ -133,7 +139,7 @@
             this.addBoardgameToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(679, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -159,23 +165,29 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(679, 581);
-            this.splitContainer1.SplitterDistance = 72;
+            this.splitContainer1.Size = new System.Drawing.Size(659, 745);
+            this.splitContainer1.SplitterDistance = 179;
             this.splitContainer1.TabIndex = 8;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.listMechanisms);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.listCategories);
             this.groupBox1.Controls.Add(this.btnChoose);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.numMaxMinutes);
+            this.groupBox1.Controls.Add(this.listTypes);
+            this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.numPlayers);
             this.groupBox1.Controls.Add(this.numMinMinutes);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 72);
+            this.groupBox1.Size = new System.Drawing.Size(659, 179);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose A Board Game";
@@ -186,7 +198,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(679, 505);
+            this.groupBox2.Size = new System.Drawing.Size(659, 562);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Board Games";
@@ -203,16 +215,70 @@
             this.dataGames.Name = "dataGames";
             this.dataGames.ReadOnly = true;
             this.dataGames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGames.Size = new System.Drawing.Size(673, 486);
+            this.dataGames.Size = new System.Drawing.Size(653, 543);
             this.dataGames.TabIndex = 0;
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
+            // 
+            // listMechanisms
+            // 
+            this.listMechanisms.FormattingEnabled = true;
+            this.listMechanisms.Location = new System.Drawing.Point(468, 37);
+            this.listMechanisms.Name = "listMechanisms";
+            this.listMechanisms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listMechanisms.Size = new System.Drawing.Size(172, 121);
+            this.listMechanisms.TabIndex = 26;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(465, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Mechanisms:";
+            // 
+            // listCategories
+            // 
+            this.listCategories.FormattingEnabled = true;
+            this.listCategories.Location = new System.Drawing.Point(290, 37);
+            this.listCategories.Name = "listCategories";
+            this.listCategories.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listCategories.Size = new System.Drawing.Size(172, 121);
+            this.listCategories.TabIndex = 24;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(287, 21);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Categories:";
+            // 
+            // listTypes
+            // 
+            this.listTypes.FormattingEnabled = true;
+            this.listTypes.Location = new System.Drawing.Point(112, 37);
+            this.listTypes.Name = "listTypes";
+            this.listTypes.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listTypes.Size = new System.Drawing.Size(172, 121);
+            this.listTypes.TabIndex = 22;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(109, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Types:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 605);
+            this.ClientSize = new System.Drawing.Size(659, 769);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -252,6 +318,12 @@
         private System.Windows.Forms.DataGridView dataGames;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ListBox listMechanisms;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListBox listCategories;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox listTypes;
+        private System.Windows.Forms.Label label6;
     }
 }
 
