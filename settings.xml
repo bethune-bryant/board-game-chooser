@@ -12,8 +12,17 @@
         <GameType>Family</GameType>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Arabian</GameCategory>
+        <GameCategory>CityBuilding</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>TilePlacement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Carcassonne</Name>
@@ -21,9 +30,18 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>45</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CityBuilding</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+        <GameCategory>TerritoryBuilding</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>TilePlacement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Cards Aginst Humanity</Name>
@@ -34,8 +52,17 @@
       <Types>
         <GameType>Party</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>Mature_Adult</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>PrintandPlay</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>SimultaneousActionSelection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Castle Panic</Name>
@@ -43,9 +70,22 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Campaign_BattleCardDriven</GameMechanism>
+        <GameMechanism>Chit_PullSystem</GameMechanism>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Catan</Name>
@@ -54,10 +94,19 @@
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
       <Types>
+        <GameType>Family</GameType>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Negotiation</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>Route_NetworkBuilding</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Catan Dice Game</Name>
@@ -66,10 +115,16 @@
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Family</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>Paper_and_Pencil</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Champions of Midgard</Name>
@@ -80,8 +135,18 @@
       <Types>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>WorkerPlacement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Codenames</Name>
@@ -92,8 +157,19 @@
       <Types>
         <GameType>Party</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>Spies_SecretAgents</GameCategory>
+        <GameCategory>WordGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>PatternRecognition</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Codenames Deep Undercover</Name>
@@ -104,8 +180,19 @@
       <Types>
         <GameType>Party</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Mature_Adult</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>Spies_SecretAgents</GameCategory>
+        <GameCategory>WordGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>PatternRecognition</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Colt Express</Name>
@@ -114,10 +201,21 @@
       <MinDuration>30</MinDuration>
       <MaxDuration>40</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Family</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>AmericanWest</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Trains</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Action_MovementProgramming</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Coup</Name>
@@ -125,9 +223,22 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Bluffing</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>Political</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Dastardly Dirigibles</Name>
@@ -135,9 +246,15 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Dixit</Name>
@@ -145,9 +262,19 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>SimultaneousActionSelection</GameMechanism>
+        <GameMechanism>Storytelling</GameMechanism>
+        <GameMechanism>Voting</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Dungeons &amp; Dragons: Castle Ravenloft Board Game</Name>
