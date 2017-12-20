@@ -24,7 +24,9 @@ namespace BoardGameChooser
             List<BoardGame> result = doc.DocumentNode
                                        .Descendants("tr")
                                        .Where(node => node.Id.StartsWith("row_"))
-                                       .Select(node => node.Descendants("a").Where(link => link.Attributes["href"].Value.StartsWith("/boardgame")).First().Attributes["href"].Value)
+                                       .Select(node => node.Descendants("a")
+                                                           .First(link => link.Attributes["href"].Value.StartsWith("/boardgame"))
+                                                           .Attributes["href"].Value)
                                        .Select(suffix => BGGURL + suffix)
                                        .Select(url => GetGameInfo(url))
                                        .ToList();
@@ -49,7 +51,12 @@ namespace BoardGameChooser
 
             dynamic stuff = JObject.Parse(gameInfo);
 
-            return new BoardGame(stuff.item.name.ToString(), int.Parse(stuff.item.minplayers.ToString()), int.Parse(stuff.item.maxplayers.ToString()), int.Parse(stuff.item.minplaytime.ToString()), int.Parse(stuff.item.maxplaytime.ToString()));
+            BoardGame retval =  new BoardGame(stuff.item.name.ToString(), 
+                                              int.Parse(stuff.item.minplayers.ToString()), 
+                                              int.Parse(stuff.item.maxplayers.ToString()), 
+                                              int.Parse(stuff.item.minplaytime.ToString()), 
+                                              int.Parse(stuff.item.maxplaytime.ToString()));
+            return retval;
         }
     }
 }
