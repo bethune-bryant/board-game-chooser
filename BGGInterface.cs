@@ -9,84 +9,47 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.IO;
+using HtmlAgilityPack;
 
 namespace BoardGameChooser
 {
-    class BGGInterface
+    static class BGGInterface
     {
         static string BGGURL = @"https://boardgamegeek.com";
-        private static dynamic RunQuery(string Query, string User, string Pass)
+        public static List<BoardGame> GetBoardGames(string user)
         {
-            string URL = BGGURL + Query;
+            HtmlWeb web = new HtmlWeb();
+            HtmlAgilityPack.HtmlDocument doc = web.Load(BGGURL + @"/collection/user/" + user);
 
-            string urlParameters = ""; // "?api_key=123";
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri(URL);
-
-            // Add an Accept header for JSON format.
-            client.DefaultRequestHeaders.Accept.Add(
-            new MediaTypeWithQualityHeaderValue("application/json"));
-
-            client.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue(
-        "Basic",
-        Convert.ToBase64String(
-            System.Text.ASCIIEncoding.ASCII.GetBytes(
-                string.Format("{0}:{1}", User, Pass))));
-
-            // List data response.
-            HttpResponseMessage response = client.GetAsync(urlParameters).Result;  // Blocking call!
-            if (response.IsSuccessStatusCode)
-            {
-                // Parse the response body. Blocking!
-                string s = response.Content.ReadAsStringAsync().Result;
-
-                dynamic stuff = JObject.Parse(s);
-
-                return stuff;
-            }
-            else
-            {
-                throw new Exception((int)response.StatusCode + " " + response.ReasonPhrase);
-            }
+            List<BoardGame> result = doc.DocumentNode
+                                       .Descendants("tr")
+                                       .Where(node => node.Id.StartsWith("row_"))
+                                       .Select(node => node.Descendants("a").Where(link => link.Attributes["href"].Value.StartsWith("/boardgame")).First().Attributes["href"].Value)
+                                       .Select(suffix => BGGURL + suffix)
+                                       .Select(url => GetGameInfo(url))
+                                       .ToList();
+            return result;
         }
 
-        private static void RunPostQuery(string Query, string PostData, string User, string Pass)
+        public static BoardGame GetGameInfo(string url)
         {
-            string URL = BGGURL + Query;
+            HtmlWeb web = new HtmlWeb();
+            HtmlAgilityPack.HtmlDocument doc = web.Load(url);
 
-            string urlParameters = ""; // "?api_key=123";
-            HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri(URL);
+            string gameInfo = doc.DocumentNode
+                                 .Descendants("script")
+                                 .Select(script => script.InnerText.Trim())
+                                 .First(text => text.StartsWith("var GEEK"))
+                                 .Split('\n')
+                                 .Select(line => line.Trim())
+                                 .First(line => line.StartsWith("GEEK.geekitemPreload"));
 
-            // Add an Accept header for JSON format.
-            client.DefaultRequestHeaders.Accept.Add(
-            new MediaTypeWithQualityHeaderValue("application/json"));
+            gameInfo = gameInfo.Substring(gameInfo.IndexOf('=') + 1).Trim();
+            gameInfo = gameInfo.Remove(gameInfo.Length - 1);
 
-            client.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue(
-        "Basic",
-        Convert.ToBase64String(
-            System.Text.ASCIIEncoding.ASCII.GetBytes(
-                string.Format("{0}:{1}", User, Pass))));
+            dynamic stuff = JObject.Parse(gameInfo);
 
-            HttpContent content = new StringContent(PostData, Encoding.UTF8, "application/json");
-
-            // List data response.
-            //HttpResponseMessage response = client.GetAsync(urlParameters).Result;  // Blocking call!
-            HttpResponseMessage response = client.PostAsync(urlParameters, content).Result;
-
-            if (response.IsSuccessStatusCode)
-            {
-                // Parse the response body. Blocking!
-                string s = response.Content.ReadAsStringAsync().Result;
-
-                dynamic stuff = JObject.Parse(s);
-            }
-            else
-            {
-                throw new Exception((int)response.StatusCode + " " + response.ReasonPhrase);
-            }
+            return new BoardGame(stuff.item.name.ToString(), int.Parse(stuff.item.minplayers.ToString()), int.Parse(stuff.item.maxplayers.ToString()), int.Parse(stuff.item.minplaytime.ToString()), int.Parse(stuff.item.maxplaytime.ToString()));
         }
     }
 }

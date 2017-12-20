@@ -165,5 +165,18 @@ namespace BoardGameChooser
         {
             System.Diagnostics.Process.Start("https://github.com/bethune-bryant/board-game-chooser");
         }
+
+        private void testToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*
+            foreach(BoardGame game in BGGInterface.GetBoardGames())
+            {
+                MessageBox.Show(game.ToString());
+            }
+            */
+
+            settings.BoardGames = new List<BoardGame>(BGGInterface.GetBoardGames("bethune_bryant"));
+            RefreshGames();
+        }
     }
 }
