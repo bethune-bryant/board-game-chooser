@@ -48,7 +48,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
-            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scrapeFromBGGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -140,7 +140,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBoardgameToolStripMenuItem,
             this.viewSourceCodeToolStripMenuItem,
-            this.testToolStripMenuItem});
+            this.scrapeFromBGGToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(659, 24);
@@ -285,12 +285,12 @@
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
             // 
-            // testToolStripMenuItem
+            // scrapeFromBGGToolStripMenuItem
             // 
-            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.testToolStripMenuItem.Text = "Test";
-            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
+            this.scrapeFromBGGToolStripMenuItem.Name = "scrapeFromBGGToolStripMenuItem";
+            this.scrapeFromBGGToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.scrapeFromBGGToolStripMenuItem.Text = "Scrape from BGG";
+            this.scrapeFromBGGToolStripMenuItem.Click += new System.EventHandler(this.scrapeFromBGGToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -343,7 +343,7 @@
         private System.Windows.Forms.ListBox listTypes;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem viewSourceCodeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem scrapeFromBGGToolStripMenuItem;
     }
 }
 

@@ -277,6 +277,16 @@
       </Mechanisms>
     </BoardGame>
     <BoardGame>
+      <Name>Dominion</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
       <Name>Dungeons &amp; Dragons: Castle Ravenloft Board Game</Name>
       <MinNumOfPlayers>1</MinNumOfPlayers>
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
@@ -315,6 +325,16 @@
       <Types>
         <GameType>War</GameType>
       </Types>
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
+      <Name>Exploding Kittens</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>15</MinDuration>
+      <MaxDuration>15</MaxDuration>
+      <Types />
       <Categories />
       <Mechanisms />
     </BoardGame>
