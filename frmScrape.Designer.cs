@@ -42,7 +42,7 @@
             // btnCancel
             // 
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(280, 209);
+            this.btnCancel.Location = new System.Drawing.Point(286, 209);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 16;
@@ -51,7 +51,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(199, 209);
+            this.btnOK.Location = new System.Drawing.Point(205, 209);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 15;
@@ -64,7 +64,7 @@
             this.txtUser.Location = new System.Drawing.Point(56, 6);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(409, 20);
-            this.txtUser.TabIndex = 18;
+            this.txtUser.TabIndex = 0;
             // 
             // lblUser
             // 
@@ -80,7 +80,7 @@
             this.btnScrape.Location = new System.Drawing.Point(471, 4);
             this.btnScrape.Name = "btnScrape";
             this.btnScrape.Size = new System.Drawing.Size(75, 23);
-            this.btnScrape.TabIndex = 19;
+            this.btnScrape.TabIndex = 1;
             this.btnScrape.Text = "Scrape";
             this.btnScrape.UseVisualStyleBackColor = true;
             this.btnScrape.Click += new System.EventHandler(this.btnScrape_Click);
@@ -126,7 +126,9 @@
             this.Controls.Add(this.btnOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(574, 283);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(574, 283);
             this.Name = "frmScrape";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Scrape from BGG";
