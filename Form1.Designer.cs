@@ -37,17 +37,18 @@
             this.btnChoose = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addBoardgameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dataGames = new System.Windows.Forms.DataGridView();
             this.listMechanisms = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.listCategories = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.listTypes = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGames = new System.Windows.Forms.DataGridView();
+            this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -138,7 +139,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBoardgameToolStripMenuItem,
-            this.viewSourceCodeToolStripMenuItem});
+            this.viewSourceCodeToolStripMenuItem,
+            this.testToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(659, 24);
@@ -151,6 +153,13 @@
             this.addBoardgameToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
             this.addBoardgameToolStripMenuItem.Text = "Add Boardgame";
             this.addBoardgameToolStripMenuItem.Click += new System.EventHandler(this.addBoardgameToolStripMenuItem_Click);
+            // 
+            // viewSourceCodeToolStripMenuItem
+            // 
+            this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
+            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
+            this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -193,34 +202,6 @@
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose A Board Game";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.dataGames);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(659, 562);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Board Games";
-            // 
-            // dataGames
-            // 
-            this.dataGames.AllowUserToAddRows = false;
-            this.dataGames.AllowUserToDeleteRows = false;
-            this.dataGames.AllowUserToOrderColumns = true;
-            this.dataGames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGames.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGames.Location = new System.Drawing.Point(3, 16);
-            this.dataGames.MultiSelect = false;
-            this.dataGames.Name = "dataGames";
-            this.dataGames.ReadOnly = true;
-            this.dataGames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGames.Size = new System.Drawing.Size(653, 543);
-            this.dataGames.TabIndex = 0;
-            this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
-            this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
             // 
             // listMechanisms
             // 
@@ -276,12 +257,40 @@
             this.label6.TabIndex = 21;
             this.label6.Text = "Types:";
             // 
-            // viewSourceCodeToolStripMenuItem
+            // groupBox2
             // 
-            this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
-            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
-            this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
-            this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
+            this.groupBox2.Controls.Add(this.dataGames);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(659, 562);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Board Games";
+            // 
+            // dataGames
+            // 
+            this.dataGames.AllowUserToAddRows = false;
+            this.dataGames.AllowUserToDeleteRows = false;
+            this.dataGames.AllowUserToOrderColumns = true;
+            this.dataGames.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGames.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGames.Location = new System.Drawing.Point(3, 16);
+            this.dataGames.MultiSelect = false;
+            this.dataGames.Name = "dataGames";
+            this.dataGames.ReadOnly = true;
+            this.dataGames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGames.Size = new System.Drawing.Size(653, 543);
+            this.dataGames.TabIndex = 0;
+            this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
+            this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
+            // 
+            // testToolStripMenuItem
+            // 
+            this.testToolStripMenuItem.Name = "testToolStripMenuItem";
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.testToolStripMenuItem.Text = "Test";
+            this.testToolStripMenuItem.Click += new System.EventHandler(this.testToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -334,6 +343,7 @@
         private System.Windows.Forms.ListBox listTypes;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem viewSourceCodeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem testToolStripMenuItem;
     }
 }
 
