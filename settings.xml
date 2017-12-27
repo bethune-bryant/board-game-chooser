@@ -49,9 +49,20 @@
       <MaxNumOfPlayers>30</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>Mature_Adult</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>PrintandPlay</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>SimultaneousActionSelection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Castle Panic</Name>
@@ -73,15 +84,15 @@
         <GameMechanism>Co_operativePlay</GameMechanism>
         <GameMechanism>DiceRolling</GameMechanism>
         <GameMechanism>HandManagement</GameMechanism>
-        <GameMechanism>VariablePlayerPowers</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
       </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Catan</Name>
       <MinNumOfPlayers>3</MinNumOfPlayers>
-      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
-      <MaxDuration>60</MaxDuration>
+      <MaxDuration>120</MaxDuration>
       <Types>
         <GameType>Family</GameType>
         <GameType>Strategy</GameType>
@@ -130,6 +141,7 @@
         <GameCategory>Fantasy</GameCategory>
         <GameCategory>Fighting</GameCategory>
         <GameCategory>Medieval</GameCategory>
+        <GameCategory>Mythology</GameCategory>
       </Categories>
       <Mechanisms>
         <GameMechanism>DiceRolling</GameMechanism>
@@ -138,9 +150,25 @@
       </Mechanisms>
     </BoardGame>
     <BoardGame>
+      <Name>CLUE: Firefly Edition</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types />
+      <Categories>
+        <GameCategory>Bluffing</GameCategory>
+        <GameCategory>Murder_Mystery</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+      </Mechanisms>
+    </BoardGame>
+    <BoardGame>
       <Name>Codenames</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
       <Types>
@@ -166,9 +194,22 @@
       <MaxNumOfPlayers>8</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Mature_Adult</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>Spies_SecretAgents</GameCategory>
+        <GameCategory>WordGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>PatternRecognition</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Colt Express</Name>
@@ -222,9 +263,7 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types>
-        <GameType>Thematic</GameType>
-      </Types>
+      <Types />
       <Categories>
         <GameCategory>CardGame</GameCategory>
       </Categories>
@@ -258,9 +297,18 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>Deck_PoolBuilding</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Dungeons &amp; Dragons: Castle Ravenloft Board Game</Name>
@@ -268,9 +316,25 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Exploration</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Horror</GameCategory>
+        <GameCategory>Miniatures</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>GridMovement</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>RolePlaying</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Dungeons &amp; Dragons: The Legend of Drizzt Board Game</Name>
@@ -278,31 +342,64 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Exploration</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Miniatures</GameCategory>
+        <GameCategory>Novel_based</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>GridMovement</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>RolePlaying</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Elder Sign</Name>
       <MinNumOfPlayers>1</MinNumOfPlayers>
       <MaxNumOfPlayers>8</MaxNumOfPlayers>
-      <MinDuration>60</MinDuration>
-      <MaxDuration>120</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <MinDuration>90</MinDuration>
+      <MaxDuration>90</MaxDuration>
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Horror</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Electronic Battleship Advanced Mission</Name>
-      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
-      <MinDuration>45</MinDuration>
-      <MaxDuration>45</MaxDuration>
-      <Types>
-        <GameType>War</GameType>
-      </Types>
-      <Categories />
-      <Mechanisms />
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
+      <Types />
+      <Categories>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Electronic</GameCategory>
+        <GameCategory>Nautical</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>SecretUnitDeployment</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Exploding Kittens</Name>
@@ -310,21 +407,22 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
-    </BoardGame>
-    <BoardGame>
-      <Name>Firefly Clue</Name>
-      <MinNumOfPlayers>3</MinNumOfPlayers>
-      <MaxNumOfPlayers>6</MaxNumOfPlayers>
-      <MinDuration>90</MinDuration>
-      <MaxDuration>90</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Party</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Animals</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>ComicBook_Strip</GameCategory>
+        <GameCategory>Humor</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Firefly: The Game</Name>
@@ -334,10 +432,21 @@
       <MaxDuration>240</MaxDuration>
       <Types>
         <GameType>Thematic</GameType>
-        <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>SpaceExploration</GameCategory>
+        <GameCategory>Travel</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>Pick_upandDeliver</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Five Tribes</Name>
@@ -345,9 +454,21 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>40</MinDuration>
       <MaxDuration>80</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Arabian</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Mythology</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>Auction_Bidding</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>VariablePhaseOrder</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Forbidden Desert</Name>
@@ -370,7 +491,6 @@
         <GameMechanism>ModularBoard</GameMechanism>
         <GameMechanism>Pick_upandDeliver</GameMechanism>
         <GameMechanism>SetCollection</GameMechanism>
-        <GameMechanism>VariablePlayerPowers</GameMechanism>
       </Mechanisms>
     </BoardGame>
     <BoardGame>
@@ -379,9 +499,22 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>ActionPointAllowanceSystem</GameMechanism>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>GridMovement</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>Pick_upandDeliver</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Formula D</Name>
@@ -389,9 +522,22 @@
       <MaxNumOfPlayers>10</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Racing</GameCategory>
+        <GameCategory>Sports</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>GridMovement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+        <GameMechanism>Simulation</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>King of Tokyo</Name>
@@ -399,19 +545,41 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Love Letter</Name>
-      <MinNumOfPlayers>3</MinNumOfPlayers>
-      <MaxNumOfPlayers>8</MaxNumOfPlayers>
-      <MinDuration>45</MinDuration>
-      <MaxDuration>45</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Renaissance</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Love Letter: Batman</Name>
@@ -419,9 +587,17 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>20</MinDuration>
       <MaxDuration>20</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Magic: The Gathering</Name>
@@ -429,21 +605,36 @@
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
       <MinDuration>20</MinDuration>
       <MaxDuration>20</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Customizable</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>CollectibleComponents</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Mastermind</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
-      <MinDuration>10</MinDuration>
-      <MaxDuration>10</MaxDuration>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Abstract</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>AbstractStrategy</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Paper_and_Pencil</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Mice and Mystics</Name>
@@ -451,19 +642,46 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>120</MinDuration>
       <MaxDuration>120</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Exploration</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Miniatures</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>RolePlaying</GameMechanism>
+        <GameMechanism>Storytelling</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Monopoly</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>6</MaxNumOfPlayers>
-      <MinDuration>90</MinDuration>
-      <MaxDuration>90</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>180</MaxDuration>
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Economic</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Auction_Bidding</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>StockHolding</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Monopoly Deal Card Game</Name>
@@ -471,9 +689,17 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Economic</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Monopoly: Pokémon Kanto Edition</Name>
@@ -482,18 +708,37 @@
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
       <Types />
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>ChildrensGame</GameCategory>
+        <GameCategory>Economic</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>VideoGameTheme</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Auction_Bidding</GameMechanism>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>StockHolding</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Monopoly: Star Wars</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
-      <MinDuration>60</MinDuration>
+      <MinDuration>20</MinDuration>
       <MaxDuration>60</MaxDuration>
       <Types />
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Economic</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Munchkin</Name>
@@ -502,10 +747,21 @@
       <MinDuration>60</MinDuration>
       <MaxDuration>120</MaxDuration>
       <Types>
-        <GameType>Party</GameType>
+        <GameType>Thematic</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Humor</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Pandemic</Name>
@@ -514,10 +770,20 @@
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
       <Types>
+        <GameType>Family</GameType>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Medical</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>ActionPointAllowanceSystem</GameMechanism>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PointtoPointMovement</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Pokémon Master Trainer</Name>
@@ -525,9 +791,21 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>ChildrensGame</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>VideoGameTheme</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Roll_SpinandMove</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Pokémon Trading Card Game</Name>
@@ -535,32 +813,64 @@
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
       <MinDuration>20</MinDuration>
       <MaxDuration>20</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Customizable</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>CollectibleComponents</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
-      <Name>Rise of Agustus</Name>
+      <Name>Rise of Augustus</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Ancient</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Risk</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
-      <MinDuration>90</MinDuration>
-      <MaxDuration>90</MaxDuration>
+      <MinDuration>120</MinDuration>
+      <MaxDuration>120</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Family</GameType>
         <GameType>War</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Miniatures</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>TerritoryBuilding</GameCategory>
+        <GameCategory>Wargame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Risk: Godstorm</Name>
@@ -568,22 +878,44 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>120</MinDuration>
       <MaxDuration>120</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Thematic</GameType>
+        <GameType>War</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Mythology</GameCategory>
+        <GameCategory>Wargame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>Campaign_BattleCardDriven</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Risk: Star Wars Edition</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
-      <MinDuration>60</MinDuration>
-      <MaxDuration>60</MaxDuration>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>45</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
-        <GameType>War</GameType>
+        <GameType>Thematic</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>Wargame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>Campaign_BattleCardDriven</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Sheriff of Nottingham</Name>
@@ -591,9 +923,24 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Bluffing</GameCategory>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>Medieval</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>Novel_based</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>RolePlaying</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Skip-Bo</Name>
@@ -601,9 +948,15 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>20</MinDuration>
       <MaxDuration>20</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Small World</Name>
@@ -612,11 +965,20 @@
       <MinDuration>40</MinDuration>
       <MaxDuration>80</MaxDuration>
       <Types>
-        <GameType>War</GameType>
+        <GameType>Family</GameType>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>TerritoryBuilding</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>AreaMovement</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Smash Up</Name>
@@ -624,9 +986,23 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Strategy</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>Pirates</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>Zombies</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>TakeThat</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Star Trek Deck Building Game: The Next Generation – The Next Phase</Name>
@@ -634,19 +1010,25 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>90</MinDuration>
       <MaxDuration>90</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
-    </BoardGame>
-    <BoardGame>
-      <Name>Star Trek Expeditions</Name>
-      <MinNumOfPlayers>1</MinNumOfPlayers>
-      <MaxNumOfPlayers>4</MaxNumOfPlayers>
-      <MinDuration>60</MinDuration>
-      <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Customizable</GameType>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Exploration</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>Deck_PoolBuilding</GameMechanism>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>RolePlaying</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Star Trek Panic</Name>
@@ -654,10 +1036,11 @@
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>90</MinDuration>
       <MaxDuration>120</MaxDuration>
-      <Types>
-        <GameType>Thematic</GameType>
-      </Types>
-      <Categories />
+      <Types />
+      <Categories>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
       <Mechanisms>
         <GameMechanism>Co_operativePlay</GameMechanism>
       </Mechanisms>
@@ -668,9 +1051,42 @@
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>75</MinDuration>
       <MaxDuration>75</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+        <GameType>Strategy</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>ModularBoard</GameMechanism>
+        <GameMechanism>Route_NetworkBuilding</GameMechanism>
+        <GameMechanism>Trading</GameMechanism>
+      </Mechanisms>
+    </BoardGame>
+    <BoardGame>
+      <Name>Star Trek: Expeditions</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Adventure</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>SpaceExploration</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Star Trek: Five-Year Mission</Name>
@@ -678,9 +1094,20 @@
       <MaxNumOfPlayers>7</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>45</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Movies_TV_Radiotheme</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Stratego (Revised Edition)</Name>
@@ -689,8 +1116,18 @@
       <MinDuration>30</MinDuration>
       <MaxDuration>30</MaxDuration>
       <Types />
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>AbstractStrategy</GameCategory>
+        <GameCategory>Bluffing</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+        <GameCategory>Fighting</GameCategory>
+        <GameCategory>Memory</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Memory</GameMechanism>
+        <GameMechanism>SecretUnitDeployment</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Sushi Go!</Name>
@@ -698,9 +1135,18 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>CardGame</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+        <GameMechanism>SimultaneousActionSelection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>The Resistance</Name>
@@ -711,8 +1157,19 @@
       <Types>
         <GameType>Party</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Bluffing</GameCategory>
+        <GameCategory>Deduction</GameCategory>
+        <GameCategory>Negotiation</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>Spies_SecretAgents</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>Partnerships</GameMechanism>
+        <GameMechanism>SimultaneousActionSelection</GameMechanism>
+        <GameMechanism>Voting</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Ticket to Ride</Name>
@@ -720,9 +1177,19 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Trains</GameCategory>
+        <GameCategory>Travel</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>Route_NetworkBuilding</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Ticket to Ride: Europe</Name>
@@ -730,21 +1197,39 @@
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
       <MaxDuration>60</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <Types>
+        <GameType>Family</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Trains</GameCategory>
+        <GameCategory>Travel</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>CardDrafting</GameMechanism>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>Route_NetworkBuilding</GameMechanism>
+        <GameMechanism>SetCollection</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Tiny Epic Galaxies</Name>
       <MinNumOfPlayers>1</MinNumOfPlayers>
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
-      <MaxDuration>30</MaxDuration>
+      <MaxDuration>60</MaxDuration>
       <Types>
         <GameType>Strategy</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>ScienceFiction</GameCategory>
+        <GameCategory>SpaceExploration</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>AreaControl_AreaInfluence</GameMechanism>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>VariablePlayerPowers</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Tsuro</Name>
@@ -753,20 +1238,40 @@
       <MinDuration>15</MinDuration>
       <MaxDuration>15</MaxDuration>
       <Types>
-        <GameType>Strategy</GameType>
+        <GameType>Abstract</GameType>
+        <GameType>Family</GameType>
       </Types>
-      <Categories />
-      <Mechanisms />
+      <Categories>
+        <GameCategory>AbstractStrategy</GameCategory>
+        <GameCategory>Fantasy</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>HandManagement</GameMechanism>
+        <GameMechanism>PlayerElimination</GameMechanism>
+        <GameMechanism>Route_NetworkBuilding</GameMechanism>
+        <GameMechanism>TilePlacement</GameMechanism>
+      </Mechanisms>
     </BoardGame>
     <BoardGame>
       <Name>Zombie Dice</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>10</MaxNumOfPlayers>
-      <MinDuration>30</MinDuration>
-      <MaxDuration>30</MaxDuration>
-      <Types />
-      <Categories />
-      <Mechanisms />
+      <MaxNumOfPlayers>99</MaxNumOfPlayers>
+      <MinDuration>10</MinDuration>
+      <MaxDuration>20</MaxDuration>
+      <Types>
+        <GameType>Party</GameType>
+      </Types>
+      <Categories>
+        <GameCategory>Dice</GameCategory>
+        <GameCategory>Horror</GameCategory>
+        <GameCategory>Humor</GameCategory>
+        <GameCategory>PartyGame</GameCategory>
+        <GameCategory>Zombies</GameCategory>
+      </Categories>
+      <Mechanisms>
+        <GameMechanism>DiceRolling</GameMechanism>
+        <GameMechanism>PressYourLuck</GameMechanism>
+      </Mechanisms>
     </BoardGame>
   </BoardGames>
 </Settings>

@@ -16,9 +16,11 @@ namespace BoardGameChooser
     static class BGGInterface
     {
         static string BGGURL = @"https://boardgamegeek.com";
+
+        static HtmlWeb web = new HtmlWeb();
+
         public static List<BoardGame> GetBoardGames(string user)
         {
-            HtmlWeb web = new HtmlWeb();
             HtmlAgilityPack.HtmlDocument doc = web.Load(BGGURL + @"/collection/user/" + user);
 
             List<BoardGame> result = doc.DocumentNode
@@ -33,9 +35,13 @@ namespace BoardGameChooser
             return result;
         }
 
+        static string CleanString(string toClean)
+        {
+            return toClean.Trim().Replace(" ", "").Replace("'", "").Replace('/', '_').Replace('-', '_').Replace("&", "and");
+        }
+
         public static BoardGame GetGameInfo(string url)
         {
-            HtmlWeb web = new HtmlWeb();
             HtmlAgilityPack.HtmlDocument doc = web.Load(url);
 
             string gameInfo = doc.DocumentNode
@@ -56,6 +62,22 @@ namespace BoardGameChooser
                                               int.Parse(stuff.item.maxplayers.ToString()), 
                                               int.Parse(stuff.item.minplaytime.ToString()), 
                                               int.Parse(stuff.item.maxplaytime.ToString()));
+
+            foreach(dynamic category in stuff.item.links.boardgamecategory)
+            {
+                retval.Categories.Add(Enum.Parse(typeof(BoardGame.GameCategory), CleanString(category.name.ToString())));
+            }
+
+            foreach (dynamic mechanic in stuff.item.links.boardgamemechanic)
+            {
+                retval.Mechanisms.Add(Enum.Parse(typeof(BoardGame.GameMechanism), CleanString(mechanic.name.ToString())));
+            }
+
+            foreach (dynamic gametype in stuff.item.links.boardgamesubdomain)
+            {
+                retval.Types.Add(Enum.Parse(typeof(BoardGame.GameType), CleanString(gametype.name.ToString().Replace("Games", "").Replace("games", ""))));
+            }
+
             return retval;
         }
     }

@@ -41,9 +41,13 @@ namespace BoardGameChooser
             {
                 MessageBox.Show("No possible Games!", "No Games!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (possibles.Count == 1)
+            {
+                MessageBox.Show(possibles[0].ToString(), "Chosen Game");
+            }
             else
             {
-                MessageBox.Show(possibles[settings.rand.Next(0, possibles.Count)].ToString(), "Chosen Game");
+                MessageBox.Show(possibles[RandOrgInterface.RandInt(0, possibles.Count)].ToString(), "Chosen Game");
             }
         }
 

@@ -76,6 +76,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyComparer.cs" />
+    <Compile Include="RandOrgInterface.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SortableBindingList.cs" />
     <EmbeddedResource Include="Form1.resx">
