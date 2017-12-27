@@ -38,6 +38,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addBoardgameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.scrapeFromBGGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listMechanisms = new System.Windows.Forms.ListBox();
@@ -48,7 +49,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
-            this.scrapeFromBGGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -139,8 +139,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBoardgameToolStripMenuItem,
-            this.viewSourceCodeToolStripMenuItem,
-            this.scrapeFromBGGToolStripMenuItem});
+            this.scrapeFromBGGToolStripMenuItem,
+            this.viewSourceCodeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(659, 24);
@@ -160,6 +160,13 @@
             this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
             this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
             this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
+            // 
+            // scrapeFromBGGToolStripMenuItem
+            // 
+            this.scrapeFromBGGToolStripMenuItem.Name = "scrapeFromBGGToolStripMenuItem";
+            this.scrapeFromBGGToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.scrapeFromBGGToolStripMenuItem.Text = "Scrape from BGG";
+            this.scrapeFromBGGToolStripMenuItem.Click += new System.EventHandler(this.scrapeFromBGGToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -284,13 +291,6 @@
             this.dataGames.TabIndex = 0;
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
-            // 
-            // scrapeFromBGGToolStripMenuItem
-            // 
-            this.scrapeFromBGGToolStripMenuItem.Name = "scrapeFromBGGToolStripMenuItem";
-            this.scrapeFromBGGToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
-            this.scrapeFromBGGToolStripMenuItem.Text = "Scrape from BGG";
-            this.scrapeFromBGGToolStripMenuItem.Click += new System.EventHandler(this.scrapeFromBGGToolStripMenuItem_Click);
             // 
             // Form1
             // 

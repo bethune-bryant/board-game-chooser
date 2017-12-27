@@ -35,6 +35,7 @@
             this.btnScrape = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
+            this.bgwScrape = new System.ComponentModel.BackgroundWorker();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGames)).BeginInit();
             this.SuspendLayout();
@@ -112,12 +113,20 @@
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
             // 
+            // bgwScrape
+            // 
+            this.bgwScrape.WorkerReportsProgress = true;
+            this.bgwScrape.WorkerSupportsCancellation = true;
+            this.bgwScrape.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bgwScrape_DoWork);
+            this.bgwScrape.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.bgwScrape_ProgressChanged);
+            this.bgwScrape.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.bgwScrape_RunWorkerCompleted);
+            // 
             // frmScrape
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(558, 244);
+            this.ClientSize = new System.Drawing.Size(558, 245);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnScrape);
             this.Controls.Add(this.txtUser);
@@ -148,5 +157,6 @@
         private System.Windows.Forms.Button btnScrape;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGames;
+        private System.ComponentModel.BackgroundWorker bgwScrape;
     }
 }

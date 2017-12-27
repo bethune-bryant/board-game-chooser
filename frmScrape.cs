@@ -18,6 +18,7 @@ namespace BoardGameChooser
         {
             InitializeComponent();
             games = new List<BoardGame>();
+            this.Enabled = true;
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -28,21 +29,8 @@ namespace BoardGameChooser
 
         private void btnScrape_Click(object sender, EventArgs e)
         {
-            List<BoardGame> scrape = BGGInterface.GetBoardGames(txtUser.Text);
-
-            games = new List<BoardGame>();
-
-            foreach(BoardGame game in scrape)
-            {
-                string existing = Form1.settings.BoardGames.Where(old => old.Name.Similar(game.Name, 0)).Select(x => x.Name).Aggregate("", (x, y) => x + "," + y);
-                if (existing.Length == 0)
-                    //|| MessageBox.Show("Are " + game.Name + " and any of " + existing + " the same game?", game.ToString() + " may already exist.", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                {
-                    games.Add(game);
-                }
-            }
-
-            RefreshGames();
+            this.Enabled = false;
+            bgwScrape.RunWorkerAsync();
         }
 
         private BoardGame selectedGame
@@ -110,5 +98,44 @@ namespace BoardGameChooser
         }
 
         public List<BoardGame> Value { get { return this.games; } }
+
+        private bool Enabled
+        {
+            set
+            {
+                txtUser.Enabled = value;
+                btnOK.Enabled = value;
+                btnCancel.Enabled = value;
+                btnScrape.Enabled = value;
+                groupBox2.Enabled = value;
+            }
+        }
+
+        private void bgwScrape_DoWork(object sender, DoWorkEventArgs e)
+        {
+            List<BoardGame> scrape = BGGInterface.GetBoardGames(txtUser.Text);
+
+            games = new List<BoardGame>();
+
+            foreach (BoardGame game in scrape)
+            {
+                string existing = Form1.settings.BoardGames.Where(old => old.Name.Similar(game.Name, 0)).Select(x => x.Name).Aggregate("", (x, y) => x + "," + y);
+                if (existing.Length == 0)
+                //|| MessageBox.Show("Are " + game.Name + " and any of " + existing + " the same game?", game.ToString() + " may already exist.", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                {
+                    games.Add(game);
+                }
+            }
+        }
+
+        private void bgwScrape_ProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+        }
+
+        private void bgwScrape_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            RefreshGames();
+            this.Enabled = true;
+        }
     }
 }

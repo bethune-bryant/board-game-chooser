@@ -44,25 +44,14 @@
       </Mechanisms>
     </BoardGame>
     <BoardGame>
-      <Name>Cards Aginst Humanity</Name>
+      <Name>Cards Against Humanity</Name>
       <MinNumOfPlayers>4</MinNumOfPlayers>
-      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <MaxNumOfPlayers>30</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
-      <MaxDuration>90</MaxDuration>
-      <Types>
-        <GameType>Party</GameType>
-      </Types>
-      <Categories>
-        <GameCategory>CardGame</GameCategory>
-        <GameCategory>Humor</GameCategory>
-        <GameCategory>Mature_Adult</GameCategory>
-        <GameCategory>PartyGame</GameCategory>
-        <GameCategory>PrintandPlay</GameCategory>
-      </Categories>
-      <Mechanisms>
-        <GameMechanism>HandManagement</GameMechanism>
-        <GameMechanism>SimultaneousActionSelection</GameMechanism>
-      </Mechanisms>
+      <MaxDuration>30</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
     </BoardGame>
     <BoardGame>
       <Name>Castle Panic</Name>
@@ -172,27 +161,14 @@
       </Mechanisms>
     </BoardGame>
     <BoardGame>
-      <Name>Codenames Deep Undercover</Name>
-      <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>10</MaxNumOfPlayers>
+      <Name>Codenames: Deep Undercover</Name>
+      <MinNumOfPlayers>4</MinNumOfPlayers>
+      <MaxNumOfPlayers>8</MaxNumOfPlayers>
       <MinDuration>15</MinDuration>
-      <MaxDuration>15</MaxDuration>
-      <Types>
-        <GameType>Party</GameType>
-      </Types>
-      <Categories>
-        <GameCategory>Deduction</GameCategory>
-        <GameCategory>Mature_Adult</GameCategory>
-        <GameCategory>PartyGame</GameCategory>
-        <GameCategory>Spies_SecretAgents</GameCategory>
-        <GameCategory>WordGame</GameCategory>
-      </Categories>
-      <Mechanisms>
-        <GameMechanism>Memory</GameMechanism>
-        <GameMechanism>Partnerships</GameMechanism>
-        <GameMechanism>PatternRecognition</GameMechanism>
-        <GameMechanism>PressYourLuck</GameMechanism>
-      </Mechanisms>
+      <MaxDuration>30</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
     </BoardGame>
     <BoardGame>
       <Name>Colt Express</Name>
@@ -351,6 +327,19 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
+      <Name>Firefly: The Game</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>120</MinDuration>
+      <MaxDuration>240</MaxDuration>
+      <Types>
+        <GameType>Thematic</GameType>
+        <GameType>Strategy</GameType>
+      </Types>
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
       <Name>Five Tribes</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
@@ -435,11 +424,11 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Magic Cards</Name>
+      <Name>Magic: The Gathering</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
-      <MinDuration>50</MinDuration>
-      <MaxDuration>50</MaxDuration>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
       <Types />
       <Categories />
       <Mechanisms />
@@ -453,6 +442,16 @@
       <Types>
         <GameType>Strategy</GameType>
       </Types>
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
+      <Name>Mice and Mystics</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
+      <MinDuration>120</MinDuration>
+      <MaxDuration>120</MaxDuration>
+      <Types />
       <Categories />
       <Mechanisms />
     </BoardGame>
@@ -477,11 +476,11 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Monopoly: Pokémon Kanto Edition </Name>
+      <Name>Monopoly: Pokémon Kanto Edition</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
-      <MinDuration>90</MinDuration>
-      <MaxDuration>90</MaxDuration>
+      <MinDuration>60</MinDuration>
+      <MaxDuration>60</MaxDuration>
       <Types />
       <Categories />
       <Mechanisms />
@@ -521,11 +520,21 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Pokemon Cards</Name>
+      <Name>Pokémon Master Trainer</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
+      <Name>Pokémon Trading Card Game</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>2</MaxNumOfPlayers>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
       <Types />
       <Categories />
       <Mechanisms />
@@ -554,6 +563,16 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
+      <Name>Risk: Godstorm</Name>
+      <MinNumOfPlayers>2</MinNumOfPlayers>
+      <MaxNumOfPlayers>5</MaxNumOfPlayers>
+      <MinDuration>120</MinDuration>
+      <MaxDuration>120</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
       <Name>Risk: Star Wars Edition</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
@@ -567,7 +586,7 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Sheriff of Knottingham</Name>
+      <Name>Sheriff of Nottingham</Name>
       <MinNumOfPlayers>3</MinNumOfPlayers>
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>60</MinDuration>
@@ -577,11 +596,11 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Skip Bo</Name>
+      <Name>Skip-Bo</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>6</MaxNumOfPlayers>
-      <MinDuration>30</MinDuration>
-      <MaxDuration>30</MaxDuration>
+      <MinDuration>20</MinDuration>
+      <MaxDuration>20</MaxDuration>
       <Types />
       <Categories />
       <Mechanisms />
@@ -600,9 +619,9 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Smash Up!</Name>
+      <Name>Smash Up</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
-      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>45</MinDuration>
       <MaxDuration>45</MaxDuration>
       <Types />
@@ -630,23 +649,45 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
+      <Name>Star Trek Panic</Name>
+      <MinNumOfPlayers>1</MinNumOfPlayers>
+      <MaxNumOfPlayers>6</MaxNumOfPlayers>
+      <MinDuration>90</MinDuration>
+      <MaxDuration>120</MaxDuration>
+      <Types>
+        <GameType>Thematic</GameType>
+      </Types>
+      <Categories />
+      <Mechanisms>
+        <GameMechanism>Co_operativePlay</GameMechanism>
+      </Mechanisms>
+    </BoardGame>
+    <BoardGame>
       <Name>Star Trek: Catan</Name>
       <MinNumOfPlayers>3</MinNumOfPlayers>
       <MaxNumOfPlayers>4</MaxNumOfPlayers>
       <MinDuration>75</MinDuration>
       <MaxDuration>75</MaxDuration>
-      <Types>
-        <GameType>Strategy</GameType>
-      </Types>
+      <Types />
       <Categories />
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Stratego</Name>
+      <Name>Star Trek: Five-Year Mission</Name>
+      <MinNumOfPlayers>3</MinNumOfPlayers>
+      <MaxNumOfPlayers>7</MaxNumOfPlayers>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>45</MaxDuration>
+      <Types />
+      <Categories />
+      <Mechanisms />
+    </BoardGame>
+    <BoardGame>
+      <Name>Stratego (Revised Edition)</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>2</MaxNumOfPlayers>
-      <MinDuration>45</MinDuration>
-      <MaxDuration>45</MaxDuration>
+      <MinDuration>30</MinDuration>
+      <MaxDuration>30</MaxDuration>
       <Types />
       <Categories />
       <Mechanisms />
@@ -674,7 +715,7 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Ticket To Ride</Name>
+      <Name>Ticket to Ride</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
@@ -684,7 +725,7 @@
       <Mechanisms />
     </BoardGame>
     <BoardGame>
-      <Name>Ticket To Ride: Europe</Name>
+      <Name>Ticket to Ride: Europe</Name>
       <MinNumOfPlayers>2</MinNumOfPlayers>
       <MaxNumOfPlayers>5</MaxNumOfPlayers>
       <MinDuration>30</MinDuration>
