@@ -24,7 +24,7 @@ namespace BoardGameChooser
         {
             get
             {
-                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList(), listCategories.SelectedItems.Cast<BoardGame.GameCategory>().ToList(), listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().ToList());
+                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, (int)numAge.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList(), listCategories.SelectedItems.Cast<BoardGame.GameCategory>().ToList(), listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().ToList());
             }
             set
             {
@@ -33,6 +33,7 @@ namespace BoardGameChooser
                 numMaxPlayers.Value = value.MaxNumOfPlayers;
                 numMinDuration.Value = value.MinDuration;
                 numMaxDuration.Value = value.MaxDuration;
+                numAge.Value = value.MinAge;
 
                 for (int i = 0; i < listTypes.Items.Count; i++) listTypes.SetSelected(i, value.Types.Contains((BoardGame.GameType)listTypes.Items[i]));
                 for (int i = 0; i < listCategories.Items.Count; i++) listCategories.SetSelected(i, value.Categories.Contains((BoardGame.GameCategory)listCategories.Items[i]));

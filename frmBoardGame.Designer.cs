@@ -46,10 +46,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listMechanisms = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.numAge = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numMinPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinDuration)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
             this.SuspendLayout();
             // 
             // lblName
@@ -127,7 +130,7 @@
             0,
             0,
             0});
-            this.numMaxDuration.Location = new System.Drawing.Point(399, 32);
+            this.numMaxDuration.Location = new System.Drawing.Point(385, 32);
             this.numMaxDuration.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -150,7 +153,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(383, 34);
+            this.label2.Location = new System.Drawing.Point(369, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(10, 13);
             this.label2.TabIndex = 9;
@@ -163,7 +166,7 @@
             0,
             0,
             0});
-            this.numMinDuration.Location = new System.Drawing.Point(337, 32);
+            this.numMinDuration.Location = new System.Drawing.Point(323, 32);
             this.numMinDuration.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -186,7 +189,7 @@
             // lblDuration
             // 
             this.lblDuration.AutoSize = true;
-            this.lblDuration.Location = new System.Drawing.Point(236, 34);
+            this.lblDuration.Location = new System.Drawing.Point(222, 34);
             this.lblDuration.Name = "lblDuration";
             this.lblDuration.Size = new System.Drawing.Size(95, 13);
             this.lblDuration.TabIndex = 7;
@@ -266,12 +269,30 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "Mechanisms:";
             // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(431, 34);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(49, 13);
+            this.lblAge.TabIndex = 30;
+            this.lblAge.Text = "Min Age:";
+            // 
+            // numAge
+            // 
+            this.numAge.Location = new System.Drawing.Point(486, 32);
+            this.numAge.Name = "numAge";
+            this.numAge.Size = new System.Drawing.Size(54, 20);
+            this.numAge.TabIndex = 29;
+            // 
             // frmBoardGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(558, 245);
+            this.ClientSize = new System.Drawing.Size(558, 244);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.numAge);
             this.Controls.Add(this.listMechanisms);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listCategories);
@@ -302,6 +323,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numMaxPlayers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinDuration)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,5 +349,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listMechanisms;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.NumericUpDown numAge;
     }
 }

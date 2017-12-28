@@ -61,7 +61,8 @@ namespace BoardGameChooser
                                               int.Parse(stuff.item.minplayers.ToString()), 
                                               int.Parse(stuff.item.maxplayers.ToString()), 
                                               int.Parse(stuff.item.minplaytime.ToString()), 
-                                              int.Parse(stuff.item.maxplaytime.ToString()));
+                                              int.Parse(stuff.item.maxplaytime.ToString()),
+                                              int.Parse(stuff.item.minage.ToString()));
 
             foreach(dynamic category in stuff.item.links.boardgamecategory)
             {
