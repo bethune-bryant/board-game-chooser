@@ -26,7 +26,10 @@ namespace BoardGameChooser
 
                 string result = string.Empty;
 
-                WebRequest req = WebRequest.Create(url);
+                HttpWebRequest req = WebRequest.CreateHttp(url);
+                req.Timeout = 3000;
+                req.Accept = "text/html";
+                req.UserAgent = @"Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36";
                 WebResponse res = req.GetResponse();
                 StreamReader reader = new StreamReader(res.GetResponseStream());
                 result = reader.ReadToEnd();
