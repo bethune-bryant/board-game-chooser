@@ -23,19 +23,22 @@ namespace BoardGameChooser
         public List<GameCategory> Categories { get; set; }
         public List<GameMechanism> Mechanisms { get; set; }
 
-        public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration, List<GameType> Types, List<GameCategory> Categories, List<GameMechanism> Mechanisms)
+        public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration, int MinAge, List<GameType> Types, List<GameCategory> Categories, List<GameMechanism> Mechanisms)
         {
             this.Name = Name;
             this.MinNumOfPlayers = MinNumOfPlayers;
             this.MaxNumOfPlayers = MaxNumOfPlayers;
             this.MinDuration = MinDuration;
             this.MaxDuration = MaxDuration;
+            this.MinAge = MinAge;
             this.Types = Types;
             this.Categories = Categories;
             this.Mechanisms = Mechanisms;
         }
 
-        public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration) : this(Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, new List<GameType>(), new List<GameCategory>(), new List<GameMechanism>()) { }
+        public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration, int MinAge) : this(Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, MinAge, new List<GameType>(), new List<GameCategory>(), new List<GameMechanism>()) { }
+
+        public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int MinDuration, int MaxDuration) : this(Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, 0) { }
 
         public BoardGame(string Name, int MinNumOfPlayers, int MaxNumOfPlayers, int Duration) : this(Name, MinNumOfPlayers, MaxNumOfPlayers, Duration, Duration) { }
 
@@ -63,7 +66,7 @@ namespace BoardGameChooser
         {
             get
             {
-                return new { Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, Types = ListString(Types), Categories = ListString(Categories), Mechanisms = ListString(Mechanisms) };
+                return new { Name, MinNumOfPlayers, MaxNumOfPlayers, MinDuration, MaxDuration, MinAge, Types = ListString(Types), Categories = ListString(Categories), Mechanisms = ListString(Mechanisms) };
             }
         }
 
