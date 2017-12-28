@@ -41,6 +41,8 @@
             this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.numAge = new System.Windows.Forms.NumericUpDown();
             this.listMechanisms = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.listCategories = new System.Windows.Forms.ListBox();
@@ -49,8 +51,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.numAge = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -60,9 +60,9 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGames)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
             this.SuspendLayout();
             // 
             // numPlayers
@@ -215,6 +215,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose A Board Game";
             // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(109, 21);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(49, 13);
+            this.lblAge.TabIndex = 28;
+            this.lblAge.Text = "Min Age:";
+            // 
+            // numAge
+            // 
+            this.numAge.Location = new System.Drawing.Point(112, 37);
+            this.numAge.Name = "numAge";
+            this.numAge.Size = new System.Drawing.Size(54, 20);
+            this.numAge.TabIndex = 27;
+            this.numAge.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            // 
             // listMechanisms
             // 
             this.listMechanisms.FormattingEnabled = true;
@@ -297,27 +318,6 @@
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
             // 
-            // lblAge
-            // 
-            this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(109, 21);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(49, 13);
-            this.lblAge.TabIndex = 28;
-            this.lblAge.Text = "Min Age:";
-            // 
-            // numAge
-            // 
-            this.numAge.Location = new System.Drawing.Point(112, 37);
-            this.numAge.Name = "numAge";
-            this.numAge.Size = new System.Drawing.Size(54, 20);
-            this.numAge.TabIndex = 27;
-            this.numAge.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,9 +340,9 @@
             this.splitContainer1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGames)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
