@@ -32,6 +32,7 @@ namespace BoardGameChooser
         {
             List<BoardGame> possibles = settings.BoardGames.Where(game => game.MinDuration >= numMinMinutes.Value && game.MaxDuration <= numMaxMinutes.Value)
                                                 .Where(game => game.MinNumOfPlayers <= numPlayers.Value && game.MaxNumOfPlayers >= numPlayers.Value)
+                                                .Where(game => game.MinAge <= numAge.Value)
                                                 .Where(game => listTypes.SelectedItems.Count == 0 || listTypes.SelectedItems.Cast<BoardGame.GameType>().Intersect(game.Types).Count() > 0)
                                                 .Where(game => listCategories.SelectedItems.Count == 0 || listCategories.SelectedItems.Cast<BoardGame.GameCategory>().Intersect(game.Categories).Count() > 0)
                                                 .Where(game => listMechanisms.SelectedItems.Count == 0 || listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().Intersect(game.Mechanisms).Count() > 0)
