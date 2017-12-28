@@ -37,8 +37,8 @@
             this.btnChoose = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addBoardgameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scrapeFromBGGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewSourceCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listMechanisms = new System.Windows.Forms.ListBox();
@@ -49,6 +49,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGames = new System.Windows.Forms.DataGridView();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.numAge = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMinMinutes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numMaxMinutes)).BeginInit();
@@ -60,6 +62,7 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGames)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).BeginInit();
             this.SuspendLayout();
             // 
             // numPlayers
@@ -86,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 60);
+            this.label2.Location = new System.Drawing.Point(12, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 3;
@@ -94,7 +97,7 @@
             // 
             // numMinMinutes
             // 
-            this.numMinMinutes.Location = new System.Drawing.Point(15, 76);
+            this.numMinMinutes.Location = new System.Drawing.Point(15, 85);
             this.numMinMinutes.Name = "numMinMinutes";
             this.numMinMinutes.Size = new System.Drawing.Size(54, 20);
             this.numMinMinutes.TabIndex = 2;
@@ -102,7 +105,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 99);
+            this.label3.Location = new System.Drawing.Point(109, 69);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 13);
             this.label3.TabIndex = 5;
@@ -110,7 +113,7 @@
             // 
             // numMaxMinutes
             // 
-            this.numMaxMinutes.Location = new System.Drawing.Point(15, 115);
+            this.numMaxMinutes.Location = new System.Drawing.Point(112, 85);
             this.numMaxMinutes.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -127,7 +130,7 @@
             // 
             // btnChoose
             // 
-            this.btnChoose.Location = new System.Drawing.Point(12, 141);
+            this.btnChoose.Location = new System.Drawing.Point(54, 124);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(75, 23);
             this.btnChoose.TabIndex = 6;
@@ -143,7 +146,7 @@
             this.viewSourceCodeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(659, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(748, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -154,19 +157,19 @@
             this.addBoardgameToolStripMenuItem.Text = "Add Boardgame";
             this.addBoardgameToolStripMenuItem.Click += new System.EventHandler(this.addBoardgameToolStripMenuItem_Click);
             // 
-            // viewSourceCodeToolStripMenuItem
-            // 
-            this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
-            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
-            this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
-            this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
-            // 
             // scrapeFromBGGToolStripMenuItem
             // 
             this.scrapeFromBGGToolStripMenuItem.Name = "scrapeFromBGGToolStripMenuItem";
             this.scrapeFromBGGToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
             this.scrapeFromBGGToolStripMenuItem.Text = "Scrape from BGG";
             this.scrapeFromBGGToolStripMenuItem.Click += new System.EventHandler(this.scrapeFromBGGToolStripMenuItem_Click);
+            // 
+            // viewSourceCodeToolStripMenuItem
+            // 
+            this.viewSourceCodeToolStripMenuItem.Name = "viewSourceCodeToolStripMenuItem";
+            this.viewSourceCodeToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.viewSourceCodeToolStripMenuItem.Text = "View Source Code";
+            this.viewSourceCodeToolStripMenuItem.Click += new System.EventHandler(this.viewSourceCodeToolStripMenuItem_Click);
             // 
             // splitContainer1
             // 
@@ -183,12 +186,14 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer1.Size = new System.Drawing.Size(659, 745);
+            this.splitContainer1.Size = new System.Drawing.Size(748, 745);
             this.splitContainer1.SplitterDistance = 179;
             this.splitContainer1.TabIndex = 8;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblAge);
+            this.groupBox1.Controls.Add(this.numAge);
             this.groupBox1.Controls.Add(this.listMechanisms);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label5);
@@ -205,7 +210,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(659, 179);
+            this.groupBox1.Size = new System.Drawing.Size(748, 179);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Choose A Board Game";
@@ -213,16 +218,16 @@
             // listMechanisms
             // 
             this.listMechanisms.FormattingEnabled = true;
-            this.listMechanisms.Location = new System.Drawing.Point(468, 37);
+            this.listMechanisms.Location = new System.Drawing.Point(565, 37);
             this.listMechanisms.Name = "listMechanisms";
             this.listMechanisms.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listMechanisms.Size = new System.Drawing.Size(172, 121);
+            this.listMechanisms.Size = new System.Drawing.Size(172, 134);
             this.listMechanisms.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(465, 21);
+            this.label5.Location = new System.Drawing.Point(562, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 13);
             this.label5.TabIndex = 25;
@@ -231,16 +236,16 @@
             // listCategories
             // 
             this.listCategories.FormattingEnabled = true;
-            this.listCategories.Location = new System.Drawing.Point(290, 37);
+            this.listCategories.Location = new System.Drawing.Point(387, 37);
             this.listCategories.Name = "listCategories";
             this.listCategories.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listCategories.Size = new System.Drawing.Size(172, 121);
+            this.listCategories.Size = new System.Drawing.Size(172, 134);
             this.listCategories.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(287, 21);
+            this.label4.Location = new System.Drawing.Point(384, 21);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 13);
             this.label4.TabIndex = 23;
@@ -249,16 +254,16 @@
             // listTypes
             // 
             this.listTypes.FormattingEnabled = true;
-            this.listTypes.Location = new System.Drawing.Point(112, 37);
+            this.listTypes.Location = new System.Drawing.Point(209, 37);
             this.listTypes.Name = "listTypes";
             this.listTypes.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.listTypes.Size = new System.Drawing.Size(172, 121);
+            this.listTypes.Size = new System.Drawing.Size(172, 134);
             this.listTypes.TabIndex = 22;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(109, 21);
+            this.label6.Location = new System.Drawing.Point(206, 21);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 21;
@@ -270,7 +275,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(659, 562);
+            this.groupBox2.Size = new System.Drawing.Size(748, 562);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Board Games";
@@ -287,16 +292,37 @@
             this.dataGames.Name = "dataGames";
             this.dataGames.ReadOnly = true;
             this.dataGames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGames.Size = new System.Drawing.Size(653, 543);
+            this.dataGames.Size = new System.Drawing.Size(742, 543);
             this.dataGames.TabIndex = 0;
             this.dataGames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGames_CellDoubleClick);
             this.dataGames.KeyUp += new System.Windows.Forms.KeyEventHandler(this.dataGames_KeyUp);
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Location = new System.Drawing.Point(109, 21);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(49, 13);
+            this.lblAge.TabIndex = 28;
+            this.lblAge.Text = "Min Age:";
+            // 
+            // numAge
+            // 
+            this.numAge.Location = new System.Drawing.Point(112, 37);
+            this.numAge.Name = "numAge";
+            this.numAge.Size = new System.Drawing.Size(54, 20);
+            this.numAge.TabIndex = 27;
+            this.numAge.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(659, 769);
+            this.ClientSize = new System.Drawing.Size(748, 769);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -316,6 +342,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGames)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numAge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,6 +371,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem viewSourceCodeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem scrapeFromBGGToolStripMenuItem;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.NumericUpDown numAge;
     }
 }
 

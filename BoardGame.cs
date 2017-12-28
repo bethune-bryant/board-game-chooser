@@ -18,6 +18,7 @@ namespace BoardGameChooser
         public int MaxNumOfPlayers { get; set; }
         public int MinDuration { get; set; }
         public int MaxDuration { get; set; }
+        public int MinAge { get; set; }
         public List<GameType> Types { get; set; }
         public List<GameCategory> Categories { get; set; }
         public List<GameMechanism> Mechanisms { get; set; }
