@@ -83,7 +83,7 @@ namespace BoardGameChooser
             this.numAge.Minimum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MinAge).Min() : 0;
             this.numAge.Maximum = settings.BoardGames.Count > 0 ? settings.BoardGames.Select(x => x.MinAge).Max() : 0;
 
-            this.numAge.Value = this.numAge.Minimum;
+            this.numAge.Value = this.numAge.Maximum;
 
             this.Text = "Board Game Chooser! | Total Games: " + settings.BoardGames.Count.ToString();
 
