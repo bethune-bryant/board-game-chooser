@@ -15,16 +15,16 @@ namespace BoardGameChooser
         public frmBoardGame()
         {
             InitializeComponent();
-            foreach (BoardGame.GameType type in Enum.GetValues(typeof(BoardGame.GameType))) listTypes.Items.Add(type);
-            foreach (BoardGame.GameCategory category in Enum.GetValues(typeof(BoardGame.GameCategory))) listCategories.Items.Add(category);
-            foreach (BoardGame.GameMechanism mechanism in Enum.GetValues(typeof(BoardGame.GameMechanism))) listMechanisms.Items.Add(mechanism);
+            //foreach (BoardGame.GameType type in Enum.GetValues(typeof(BoardGame.GameType))) listTypes.Items.Add(type);
+            //foreach (BoardGame.GameCategory category in Enum.GetValues(typeof(BoardGame.GameCategory))) listCategories.Items.Add(category);
+            //foreach (BoardGame.GameMechanism mechanism in Enum.GetValues(typeof(BoardGame.GameMechanism))) listMechanisms.Items.Add(mechanism);
         }
 
         public BoardGame Value
         {
             get
             {
-                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, (int)numAge.Value, listTypes.SelectedItems.Cast<BoardGame.GameType>().ToList(), listCategories.SelectedItems.Cast<BoardGame.GameCategory>().ToList(), listMechanisms.SelectedItems.Cast<BoardGame.GameMechanism>().ToList());
+                return new BoardGame(txtName.Text.Trim(), (int)numMinPlayers.Value, (int)numMaxPlayers.Value, (int)numMinDuration.Value, (int)numMaxDuration.Value, (int)numAge.Value, new List<string>(), new List<string>(), new List<string>());
             }
             set
             {
@@ -35,9 +35,9 @@ namespace BoardGameChooser
                 numMaxDuration.Value = value.MaxDuration;
                 numAge.Value = value.MinAge;
 
-                for (int i = 0; i < listTypes.Items.Count; i++) listTypes.SetSelected(i, value.Types.Contains((BoardGame.GameType)listTypes.Items[i]));
-                for (int i = 0; i < listCategories.Items.Count; i++) listCategories.SetSelected(i, value.Categories.Contains((BoardGame.GameCategory)listCategories.Items[i]));
-                for (int i = 0; i < listMechanisms.Items.Count; i++) listMechanisms.SetSelected(i, value.Mechanisms.Contains((BoardGame.GameMechanism)listMechanisms.Items[i]));
+                //for (int i = 0; i < listTypes.Items.Count; i++) listTypes.SetSelected(i, value.Types.Contains((BoardGame.GameType)listTypes.Items[i]));
+                //for (int i = 0; i < listCategories.Items.Count; i++) listCategories.SetSelected(i, value.Categories.Contains((BoardGame.GameCategory)listCategories.Items[i]));
+                //for (int i = 0; i < listMechanisms.Items.Count; i++) listMechanisms.SetSelected(i, value.Mechanisms.Contains((BoardGame.GameMechanism)listMechanisms.Items[i]));
             }
         }
 

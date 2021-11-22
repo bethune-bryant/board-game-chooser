@@ -31,6 +31,8 @@ namespace BoardGameChooser
         {
             this.Enabled = false;
             bgwScrape.RunWorkerAsync();
+            //List<BoardGame> scrape = BGGInterface.GetBoardGames(txtUser.Text);
+
         }
 
         private BoardGame selectedGame
@@ -113,18 +115,25 @@ namespace BoardGameChooser
 
         private void bgwScrape_DoWork(object sender, DoWorkEventArgs e)
         {
-            List<BoardGame> scrape = BGGInterface.GetBoardGames(txtUser.Text);
-
-            games = new List<BoardGame>();
-
-            foreach (BoardGame game in scrape)
+            try
             {
-                string existing = Form1.settings.BoardGames.Where(old => old.Name.Similar(game.Name, 0)).Select(x => x.Name).Aggregate("", (x, y) => x + "," + y);
-                if (existing.Length == 0)
-                //|| MessageBox.Show("Are " + game.Name + " and any of " + existing + " the same game?", game.ToString() + " may already exist.", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                List<BoardGame> scrape = BGGInterface.GetBoardGames(txtUser.Text);
+
+                games = new List<BoardGame>();
+
+                foreach (BoardGame game in scrape)
                 {
-                    games.Add(game);
+                    string existing = Form1.settings.BoardGames.Where(old => old.Name.Similar(game.Name, 0)).Select(x => x.Name).Aggregate("", (x, y) => x + "," + y);
+                    if (true || existing.Length == 0)
+                    //|| MessageBox.Show("Are " + game.Name + " and any of " + existing + " the same game?", game.ToString() + " may already exist.", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    {
+                        games.Add(game);
+                    }
                 }
+            }
+            catch(Exception exc)
+            {
+                MessageBox.Show(exc.ToString());
             }
         }
 
