@@ -27,6 +27,7 @@ def agerangetominage(agerange):
 
 def choose(collection, players, youngest=None, max_playtime=None, all=False):
     collection = [game for game in collection if game["itemtype"] == "standalone"]
+    #TODO Have different player count modes. e.g. BGG Recommended, BGG Best, MinMax.
     collection = [game for game in collection if int(game['minplayers']) <= players and int(game['maxplayers']) >= players]
     if youngest is not None:
         collection = [game for game in collection if agerangetominage(game['bggrecagerange']) <= youngest]
